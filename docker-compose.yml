@@ -1,13 +1,12 @@
 version: '2'
 services:
   krita:
-#    image: ''
-    build: .
+    image: 'albertalvarezbruned/krita'
     container_name: 'krita'
     volumes:
       - './home:/home/kritauser/home''
       - '/tmp/.X11-unix:/tmp/.X11-unix'
     environment:
-      - DISPLAY=$DISPLAY_MAC
-#      - DISPLAY=unix$DISPLAY
+#      - DISPLAY=$DISPLAY_MAC
+      - DISPLAY=unix$DISPLAY
 # file in proof
