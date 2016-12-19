@@ -4,7 +4,7 @@ services:
     image: 'albertalvarezbruned/krita'
     container_name: 'krita'
     volumes:
-      - './home:/home/kritauser/home''
+      - './home:/home/kritauser/home'
       - '/tmp/.X11-unix:/tmp/.X11-unix'
     environment:
 #      - DISPLAY=$DISPLAY_MAC
